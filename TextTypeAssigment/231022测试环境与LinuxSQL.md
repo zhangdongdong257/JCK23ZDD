@@ -45,6 +45,19 @@ http://shell.ceshiren.com:8555/
 
 端口选择：8090-9000 之间的某一个，不要冲突。<br>
 提交服务启动之后的浏览器访问截图即可。
+nohup java -jar spring-petclinic.jar --servet=8866 > nohup.out 2>&1 &<br>
+ps -ef |grep java
+![img_12.png](img_12.png)
+http://shell.ceshiren.com:8866/owners/new
+![img_13.png](img_13.png)
+![img_14.png](img_14.png)
 
 
+select * from owners where last_name="dongdong";
+![img_15.png](img_15.png)
 
+insert into owners (`first_name`, `last_name`, `address`, `city`, `telephone`)
+VALUES ('zhang2','dongdong2','hangzhou1009hao2','杭州','1322222333');
+![img_16.png](img_16.png)
+select * from owners where last_name="dongdong2";
+![img_17.png](img_17.png)
