@@ -12,7 +12,7 @@ public class Stage {
     private Hero winHero;
 
 
-    public void attackFirst(Hero hero1, Hero hero2){
+    public Hero attackFirst(Hero hero1, Hero hero2){
         Integer blood1, blood2, blood3, blood4;
         blood3 = hero1.getBlood();
         blood4 = hero2.getBlood();
@@ -46,11 +46,11 @@ public class Stage {
                 break;
             }
             i++;
-
         }
+        return this.winHero;
     }
 
-    public  void postAttack(Hero hero1, Hero hero2){
+    public  Hero postAttack(Hero hero1, Hero hero2){
         Integer blood1, blood2, blood3, blood4;
         blood3 = hero1.getBlood();
         blood4 = hero2.getBlood();
@@ -85,8 +85,8 @@ public class Stage {
                 break;
             }
             i++;
-
         }
+        return this.winHero;
     }
 
     public static void  getBackGround(){
