@@ -3,6 +3,7 @@ package com.ceshiren.hogwarts.play;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+//import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,6 +11,7 @@ class PlayTest {
 
     @BeforeEach
     void setUp() {
+        HeroFactory.getHeros(5);//创建5个英雄
     }
 
     @AfterEach
@@ -18,6 +20,9 @@ class PlayTest {
 
     @Test
     void selectMenu() {
+        Play paly = new Play();
+        paly.selectMenu();
+
     }
 
     @Test
