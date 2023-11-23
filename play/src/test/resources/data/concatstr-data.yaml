@@ -1,0 +1,13 @@
+---
+- str:
+    - a
+    - b
+  expect: a b
+- str:
+    - c
+    - 1
+  expect: c 1
+- str:
+    - 2
+    - 1
+  expect: 2 1

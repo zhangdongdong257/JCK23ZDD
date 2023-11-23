@@ -1,0 +1,19 @@
+---
+- addNumber:
+    - 66
+    - -66
+  expect: 0
+- addNumber:
+    - 77
+    - 77
+  expect: 154
+- addNumber:
+    - -88
+    - -88
+  expect: -176
+- addNumber:
+    - 50
+    - 50
+    - 50
+    - 50
+  expect: 200

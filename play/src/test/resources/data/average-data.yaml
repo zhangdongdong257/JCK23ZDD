@@ -1,0 +1,19 @@
+---
+- averageNumbers:
+    - 88
+    - 88
+  expect: 88
+- averageNumbers:
+    - 99
+    - -99
+  expect: 0
+- averageNumbers:
+    - -88
+    - -88
+  expect: -88
+- averageNumbers:
+    - 55
+    - 66
+    - 77
+  expect: 66
+
